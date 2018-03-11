@@ -50,8 +50,6 @@
 					
 						<li><a href="/archives">Archives</a></li>
 					
-						<li><a href="/about">About</a></li>
-					
 					<li>
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
@@ -74,23 +72,35 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/10/05/my-first-blog/" title="my first blog" itemprop="url">my first blog</a>
+      <a href="/2018/03/05/cross-browser/" title="常见的浏览器兼兼容性总结" itemprop="url">常见的浏览器兼兼容性总结</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="ShiLiqiong" target="_blank" itemprop="author">ShiLiqiong</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-04T16:30:06.000Z" itemprop="datePublished"> Published 2016-10-05</time>
+    <time datetime="2018-03-05T05:59:57.000Z" itemprop="datePublished"> Published 2018-03-05</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        <p>我的第一篇文章</p>
+        <ol>
+<li><p>不同浏览器的标签默认外补丁margin和内补丁padding不同</p>
+<p> 发生概率：100%</p>
+<p> 解决方案：使用CSS通配符*，设置内外补丁为0</p>
+<p> *{ margin: 0; padding: 0;}</p>
+</li>
+<li><p>块属性标签float之后，又有横向的margin值，在IE6中显示会比设置的大（IE6双边距bug）</p>
+<p>发生概率：90%</p>
+<p>解决方案：在float标签样式控制中加入display:inline;</p>
+</li>
+</ol>
         
         
         <p class="article-more-link">
+          
+            <a href="/2018/03/05/cross-browser/#more">Read More</a>
           
        </p>
     </div>
@@ -106,7 +116,7 @@
 <div class="comments-count">
 	
 	  	<span></span>
-		<a href="/2016/10/05/my-first-blog/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/10/05/my-first-blog/" data-count-type="comments">&nbsp;</a>
+		<a href="/2018/03/05/cross-browser/#comments" class="ds-thread-count comments-count-link" data-thread-key="2018/03/05/cross-browser/" data-count-type="comments">&nbsp;</a>
 	
 </div>
 
@@ -126,32 +136,27 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/09/27/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2016/10/05/case-interview/" title="前端面试题" itemprop="url">前端面试题</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="ShiLiqiong" target="_blank" itemprop="author">ShiLiqiong</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-27T06:28:53.360Z" itemprop="datePublished"> Published 2016-09-27</time>
+    <time datetime="2016-10-04T16:30:06.000Z" itemprop="datePublished"> Published 2016-10-05</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <h3 id="一、HTML和CSS"><a href="#一、HTML和CSS" class="headerlink" title="一、HTML和CSS"></a>一、HTML和CSS</h3><p>1、你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">IE:Trident  </div><div class="line">Firefox:Gecko  </div><div class="line">Safari和Chrome:WebKit   </div><div class="line">Opera:Presto</div></pre></td></tr></table></figure></p>
+<p>2、每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE&gt; 声明位于文档中的最前面的位置，处于 &lt;html&gt; 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。</div><div class="line">（重点：告诉浏览器按照何种规范解析页面）</div></pre></td></tr></table></figure></p>
+<p>3、Quirks模式是什么？它和Standards模式有什么区别？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">在Quirks 模式下，IE的宽度和高度还包含了padding和border。</div><div class="line">设置行内元素的高宽：在Standards模式下，给&lt;span&gt;等行内元素设置wdith和height都不会生效，而在quirks模式下，则会生效。</div><div class="line">margin:0 auto设置水平居中：使用margin:0 auto在standards模式下可以使元素水平居中，但在 quirks模式下却会失效。  </div><div class="line">IE6/7及IE8混杂模式（quirks模式）中，text- align:center可以使块级元素也居中对齐。其他浏览器中，text-align:center仅作用于行内内容上。</div><div class="line">解决这个问题比较好的方式，就是为所有需要相对父容器居中对齐的块级元素设置“margin：0 auto”。但这个方式 IE6/IE7/IE8的混杂模式中不支持，</div><div class="line">所以还要设置父容器的 <span class="string">"text-align:center;"</span></div></pre></td></tr></table></figure></p>
         
         
         <p class="article-more-link">
+          
+            <a href="/2016/10/05/case-interview/#more">Read More</a>
           
        </p>
     </div>
@@ -167,7 +172,61 @@
 <div class="comments-count">
 	
 	  	<span></span>
-		<a href="/2016/09/27/hello-world/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/09/27/hello-world/" data-count-type="comments">&nbsp;</a>
+		<a href="/2016/10/05/case-interview/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/10/05/case-interview/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/09/27/jsonp/" title="JSONP" itemprop="url">JSONP</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="ShiLiqiong" target="_blank" itemprop="author">ShiLiqiong</a>
+		
+  <p class="article-time">
+    <time datetime="2016-09-27T06:28:53.360Z" itemprop="datePublished"> Published 2016-09-27</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>为了便于客户端使用数据，逐渐形成了一种非正式传输协议，人们把它称作JSONP，该协议的一个要点就是允许用户传递一个callback参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。<br>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2016/09/27/jsonp/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2016/09/27/jsonp/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/09/27/jsonp/" data-count-type="comments">&nbsp;</a>
 	
 </div>
 
@@ -212,26 +271,10 @@
             
           </li>
         
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-            
-          </li>
-        
     </ul>
 </div>
 
   
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">Weibo</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=3884011721&verifier=&dpc=1"></iframe>
-</div>
 
 
 </aside>
@@ -252,8 +295,6 @@
 	 
 	<div class="social-font" class="clearfix">
 		
-		<a href="http://weibo.com/3884011721 for http://weibo.com/3884011721/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" target="_blank" class="icon-weibo" title="微博"></a>
-		
 		
 		
 		
@@ -268,7 +309,7 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
 		
 		<a href="/about" target="_blank" title="ShiLiqiong">ShiLiqiong</a>
 		
